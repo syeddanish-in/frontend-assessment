@@ -1,8 +1,16 @@
-{
-    "routes": [
-        {
-            "src": "/",
-            "dest": "/" 
-        }
+  {
+    "rewrites": [
+      {
+        "source": "/(.*)",
+        "destination": "/index.html"
+      }
+    ],
+    "builds": [
+      {
+        "src": "dist/frontend-assessment",
+        "use": "@vercel/static"
+      }
     ]
-}
+  }
+  
+  
