@@ -1,0 +1,12 @@
+<div class="grid-container">
+  <div class="grid">
+    @for (box of boxes; track box; let i = $index) {
+      <div
+        class="box"
+        [style.backgroundColor]="box"
+        (click)="handleBoxClick(i)"
+      ></div>
+    }
+  </div>
+  <button class="reset-button" (click)="handleReset()">Reset</button>
+</div>
