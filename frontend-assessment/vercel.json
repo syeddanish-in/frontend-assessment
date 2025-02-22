@@ -2,14 +2,14 @@
     "version": 2,
     "builds": [
       {
-        "src": "dist/frontend-assessment",
+        "src": "src/index.html",
         "use": "@vercel/static"
       }
     ],
-    "rewrites": [
+    "routes": [
       {
-        "source": "/(.*)",
-        "destination": "/index.html"
+        "src": "/(.*)",
+        "dest": "src/index.html"
       }
     ]
   }
